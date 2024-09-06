@@ -1,0 +1,27 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="~/content/pic.jpg" alt="Header Image" class="img-responsive" style="width: 100%; height: auto;">
+    </div>
+</div>
+
+<div class="container">
+    <!-- Car Number Search Form -->
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-inline" action="/Home/SearchCar" method="get">
+                <div class="form-group">
+                    <label for="carNumber">Car Number:</label>
+                    <input type="text" class="form-control" id="carNumber" name="carNumber" placeholder="Enter car number" required>
+                </div>
+                <!-- Use a col-md-offset-* class to move the button to the left -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="margin-left: 15px;">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
